@@ -1,6 +1,6 @@
 @import url("slick.css");
 @import url("slick-theme.css");
-@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lato|Quicksand&display=swap');
 
 * {
     margin: 0px;
@@ -18,18 +18,53 @@ ul {
 
 h1 , h2 , h3 , h4 , h5 {
     font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+
+.header-site-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(75deg, #010101, #090909);
+    color:#EEE;
+    font-family: 'Lobster', cursive;
+    position: fixed;
+    width: calc(100% - 20px);
+    z-index: 99;
+    top:0;
+}
+
+.header-site-mobile svg {
+    margin-left: 5px;
+}
+
+.button-menu-mobile {
+    border: none;
+    background: none;
+    font-size: 25px;
+    color:#620CAC;
+    transition:opacity 0.25s;
+    -webkit-transition: opacity .25s;
+    -moz-transition: opacity 0.25s;
+    opacity: 1;
+}
+
+.button-menu-mobile.hide {
+    opacity: 0;
 }
 
 .menu-mobile {
-    background: rgba(255,255,255,.9);
+    background: rgba(0,0,0,.9);
     height: 100%;
     position: fixed;
     width: 100%;
     overflow-x: hidden;left:0%;
-    z-index: 99;
+    z-index: 100;
     transition:left 0.25s 0.25s;
     -webkit-transition:left .25s 0.25s;
     -moz-transition: left 0.25s 0.25s;
+    top:0px;
 }
 
 .menu-mobile.closed {
@@ -60,7 +95,6 @@ h1 , h2 , h3 , h4 , h5 {
     position: absolute;
     bottom: 0;
     height: 35px;
-    background: white;
     width: 100%;
 }
 
@@ -73,23 +107,8 @@ h1 , h2 , h3 , h4 , h5 {
     color:#620CAC
 }
 
-.button-menu-mobile {
-    border: none;
-    background: none;
-    font-size: 25px;
-    position: absolute;
-    right: 10px;
-    color:#620CAC;
-    transition:opacity 0.25s;
-    -webkit-transition: opacity .25s;
-    -moz-transition: opacity 0.25s;
-    opacity: 1;
-    z-index: 90;
-    top: 10px;
-}
-
-.button-menu-mobile.hide {
-    opacity: 0;
+.home-page {
+    margin-top:49px;
 }
 
 .section {
@@ -170,4 +189,38 @@ h1 , h2 , h3 , h4 , h5 {
     color: #FFF;
     padding: 50px 30px;
     font-weight: normal;
+}
+
+.payment {
+    /* background: linear-gradient(70deg, #101010, #151515); */
+    background: #FFD200;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.payment h1 {
+    color:#101010;
+    margin-bottom: 20px;
+}
+
+.footer-site {
+    padding: 20px 0;
+    background: linear-gradient(75deg, #010101, #090909);
+    color:#E0E0E0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.footer-site ul {
+    padding-bottom: 15px;
+}
+
+.footer-site ul li {
+    padding:5px 20px;
+}
+
+.footer-site div {
+    padding: 20px 20px 0;
+    border-top: 1px solid #202020;
 }

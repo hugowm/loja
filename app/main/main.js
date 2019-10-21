@@ -1,8 +1,8 @@
 import React from 'react';
 import HomePage from '../pages/hompage';
 import MenuMobile from '../components/menu-mobile';
-import IconButton from '../components/icon-button';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import TopoMobile from '../components/top-mobile.js';
+import Footer from '../components/footer';
 
 export default class Main extends React.Component {
     constructor(props){
@@ -29,9 +29,10 @@ export default class Main extends React.Component {
     render(){
         return (
             <div>
-                <IconButton icon={faBars} onClick={this.openMobileMenu} cls={this.state.menuMobileClass === "closed" ? 'button-menu-mobile' : 'button-menu-mobile hide'} />
+                <TopoMobile menuMobileClass={this.state.menuMobileClass} openMobileMenu={this.openMobileMenu} />
                 <MenuMobile cls={this.state.menuMobileClass} closeMobileMenu={this.closeMobileMenu} />
                 <HomePage />
+                <Footer />
             </div>
         )
     }
