@@ -16,7 +16,7 @@ export default class HomePage extends React.Component {
                 </Slider>
 
                 <section className="section text01">
-                    <h1>Bem vindo(a)!</h1>
+                    <h1>Bem vindo(a) !</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis cursus leo, at vulputate neque. Donec vel sem quis tortor laoreet vulputate. Integer vehicula eros at aliquam blandit.
                         <br />
