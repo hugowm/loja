@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTree } from '@fortawesome/free-solid-svg-icons';
+import { faTree, faShoppingBasket, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 import ButtonMenuMobile from '../components/button-menu-mobile';
 import Menu from '../components/menu';
-
+import IconButton from '../components/icon-button'
 
 export default class Header extends React.Component {
     constructor(props){
@@ -27,11 +27,15 @@ export default class Header extends React.Component {
     render(){
         return (
             <header className="header-site-mobile">
-                <div className="top-mobile">
+                <div className={this.state.menuOpened ? 'top-mobile change' : 'top-mobile'}>
                     <div>
                         LOGO <FontAwesomeIcon icon={faTree}  />          
                     </div>
-                    <ButtonMenuMobile onClick={this.openCloseMenu} cls={this.state.menuOpened ? 'change' : ''} />
+                    <div className="buttons">
+                        <IconButton cls="button-account" icon={faUserCircle} onClick={()=>{}} />
+                        <IconButton cls="button-cart" icon={faShoppingBasket} onClick={()=>{}} />
+                        <ButtonMenuMobile onClick={this.openCloseMenu} cls={this.state.menuOpened ? 'change' : ''} />
+                    </div>
                 </div>
                 <Menu cls={this.state.menuOpened ? '' : 'closed'} />
             </header>

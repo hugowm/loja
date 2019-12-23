@@ -7,27 +7,26 @@ export default class HomePage extends React.Component {
         return (
             <div className="home-page">
                 <Slider dots={false} infinite={true} autoplay={true} autoplaySpeed={5000} speed={500} slidesToShow={1} slidesToScroll={1} arrows={false}>
-                    <img src="https://via.placeholder.com/1100x650/FEE/666?text=IMAGEM+01" />
-                    <img src="https://via.placeholder.com/1100x650/EEF/999?text=IMAGEM+02" />
-                    <img src="https://via.placeholder.com/1100x650/FEE/666?text=IMAGEM+03" />
-                    <img src="https://via.placeholder.com/1100x650/EEF/999?text=IMAGEM+04" />
-                    <img src="https://via.placeholder.com/1100x650/FEE/666?text=IMAGEM+05" />
-                    <img src="https://via.placeholder.com/1100x650/EEF/999?text=IMAGEM+06" />
+                    {/* <img src="https://via.placeholder.com/1100x650/E72222/000?text=BANNER+01" />
+                    <img src="https://via.placeholder.com/1100x650/000/E72222?text=BANNER+02" />
+                    <img src="https://via.placeholder.com/1100x650/E72222/000?text=BANNER+03" /> */}
+                    <div className="bannerTop">
+                        DESTAQUE 01
+                    </div>
+                    <div className="bannerTop b2">
+                        DESTAQUE 02
+                    </div>
+                    <div className="bannerTop b3">
+                        DESTAQUE 03
+                    </div>
+                    <div className="bannerTop b4">
+                        DESTAQUE 04
+                    </div>
                 </Slider>
 
-                <section className="section text01">
-                    <h1>Bem vindo(a) !</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis cursus leo, at vulputate neque. Donec vel sem quis tortor laoreet vulputate. Integer vehicula eros at aliquam blandit.
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis cursus leo, at vulputate neque. Donec vel sem quis tortor laoreet vulputate. Integer vehicula eros at aliquam blandit. 
-                    </p>
-                </section>
-
                 <section className="section categoria01">
-                    <h3>Categoria 01</h3>
-                    <Slider dots={false} infinite={true} autoplay={true} autoplaySpeed={4000} speed={500} slidesToShow={2} slidesToScroll={1} arrows={false}>
+                    <h3>Novidades</h3>
+                    <Slider dots={false} infinite={true} autoplay={false} autoplaySpeed={4000} speed={500} slidesToShow={1} centerMode={true} slidesToScroll={1} arrows={false}>
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/EEF/999?text=PRODUTO+01" name="Produto 01" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$60,00" />
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/FEE/666?text=PRODUTO+02" name="Produto 02" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$80,00" />
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/EEF/999?text=PRODUTO+03" name="Produto 03" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$90,00" />
@@ -42,7 +41,7 @@ export default class HomePage extends React.Component {
 
                 <section className="section categoria01">
                     <h3>Categoria 02</h3>
-                    <Slider dots={false} infinite={true} autoplay={true} autoplaySpeed={2500} speed={500} slidesToShow={2} slidesToScroll={1} arrows={false}>
+                    <Slider dots={false} infinite={true} autoplay={false} autoplaySpeed={2500} speed={500} slidesToShow={2} slidesToScroll={1} arrows={false}>
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/EEF/999?text=PRODUTO+01" name="Produto 01" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$60,00" />
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/FEE/666?text=PRODUTO+02" name="Produto 02" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$80,00" />
                         <ProductShowcase cls="item-slider-2-home" image="https://via.placeholder.com/300x300/EEF/999?text=PRODUTO+03" name="Produto 03" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra, mauris lobortis luctus suscipit." price="R$90,00" />
